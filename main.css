@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    background-color: #ff4c00;
+    color: #fff;
+}
+h4{
+    color:chartreuse;
+}
+fieldset{
+    width: 450px;
+}
+.form {
+    color: rgb(255, 0, 0);
+    margin-left: 75px;
+}
+.email{
+    margin-left:35px;
+}
