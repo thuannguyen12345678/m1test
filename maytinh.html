@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table border="1" > 
+        <tr>
+            <td colspan="4">
+                <input id="alo" type="text"/></td>
+        </tr>
+        <tr>
+           <td> 
+            <button onclick="xu_ly_1()">1</button> 
+            <button onclick="xu_ly_2()">2</button> 
+            <button onclick="xu_ly_3()">3</button> 
+            <button onclick="xu_ly_4()">+</button> 
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <button onclick="xu_ly_5()">4</button>
+            <button onclick="xu_ly_6()">5</button>
+            <button onclick="xu_ly_7()">6</button>
+            <button onclick="xu_ly_8()">-</button>
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <button onclick="xu_ly_9()">7</button>
+            <button onclick="xu_ly_10()">8</button>
+            <button onclick="xu_ly_11()">9</button>
+            <button onclick="xu_ly_12()">*</button>
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <button onclick="xu_ly_13()">C</button>
+            <button onclick="xu_ly_14()">0</button>
+            <button onclick="xu_ly_15()">=</button>
+            <button onclick="xu_ly_16()">/</button>
+        </td>
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+    function xu_ly_1() {
+        var ket_qua= document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua + 1;
+    }
+    function xu_ly_2(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +2
+        }
+    function xu_ly_3(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +3
+    }
+    function xu_ly_4(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +"+"
+    }
+    function xu_ly_5(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +4
+    }
+    function xu_ly_6(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +5
+    }
+    function xu_ly_7(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +6
+    }
+    function xu_ly_8(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +"-"
+    }
+    function xu_ly_9(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +7
+    }
+    function xu_ly_10(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +8
+    }
+    function xu_ly_11(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +9
+    }
+    function xu_ly_12(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +"*"
+    }
+    function xu_ly_13(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= "";
+    }
+    function xu_ly_14(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua +0
+    }
+    function xu_ly_15(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= eval(ket_qua);
+    }
+    function xu_ly_16(){
+        var ket_qua = document.getElementById("alo").value;
+        document.getElementById("alo").value= ket_qua + "/";
+    }
+
+</script>
+<style>
+    table {
+    background-color:white;
+    margin:auto;
+}
+#Results {
+     width: 500px;
+}
+.btn{
+    width: 35px;
+    height: 49px;
+}
+</style>

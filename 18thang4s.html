@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="bai1()"> bài 1</button> <br>
+    <button onclick="bai2()"> bài 2</button><br>
+    <button onclick="bai3()"> bài 3</button><br>
+    <button onclick="bai4()"> bài 4</button>
+    <script>
+        function bai1() {
+            var vatly = parseInt(prompt("nhập điểm vật lý"));
+            var hoa = parseInt(prompt("nhập điểm hóa"));
+            var sinhhoc = parseInt(prompt("nhập điểm sinh"));
+            tong = (vatly + hoa + sinhhoc);
+            tb = (vatly + hoa + sinhhoc) / 3;
+            document.write("Tổng số điểm 3 môn: " + tong + "<br>" + "trung bình " + tb);
+        };
+        function bai2() {
+            var c = parseInt(prompt("Nhập số"));
+            var f = c * 1.8000 + 32.00;
+            document.write("độ c qua F:" + f);
+        };
+        function bai3() {
+            var R = parseInt(prompt("nhập số"));
+            var S = (R * R )* 3.14;
+            document.write("diện tích hình tròn là:" + S);
+        }
+        function bai4() {
+            var d = parseInt(prompt("nhập số"));
+            var c = d * 3.14;
+            document.write("chu vi hình tròn là:" + c);
+        }
+    </script>
+
+</body>
+
+</html>

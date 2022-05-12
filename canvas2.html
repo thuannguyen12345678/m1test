@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saluy</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="600" style="color: brown;"></canvas>
+</body>
+<script>
+    var Rectangle = function (c_dai, c_rong) {
+        this.c_dai = c_dai;
+        this.c_rong = c_rong
+        this.getS = function () {
+            return this.c_dai * this.c_rong
+
+        }
+        this.getchuvi = function () {
+            return (this.c_dai + this.c_rong) * 2
+        }
+        this.render = function () {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "blue"
+            ctx.fillRect(50, 20, this.c_rong, this.c_dai)
+        }
+    }
+    var hv1 = new Rectangle(200, 300)
+    console.log(hv1)
+    console.log(hv1.getS())
+    console.log(hv1.getchuvi())
+    hv1.render()
+
+
+
+
+</script>
+
+</html>

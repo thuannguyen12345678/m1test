@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+</head>
+
+<body>
+    <table border="2" style="width: 200px;">
+        <tr>
+            <td colspan="2" style="text-align: center;">Nokia</td>
+            <td id="pin">100%</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 50px; height: 30;"><input type="text" id="text"></td>
+        </tr>
+
+
+
+        <tr>
+            <td style="background-color: aqua;"> <button onclick="nut1()">On</button></td>
+            <td style="background-color: rgb(31, 228, 57);"> <button onclick="nut2()">Send</button></td>
+            <td style="background-color: red;"><button onclick="nut3()">Off</button></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(31, 228, 57);"><button onclick="nut4()">check_On_off</button></td>
+            <td style="background-color: rgb(31, 228, 57);"><button onclick="nut5()">Save msg</button></td>
+            <td style="background-color: rgb(31, 228, 57);"><button onclick="nut6()">Charging</button></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(31, 228, 57);"><button onclick="nut7()">msg đã gửi</button></td>
+            <td style="background-color: rgb(31, 228, 57);"><button onclick="nut8()">msg đã lưu </button></td>
+            <td style="background-color: rgb(31, 228, 57);"><button onclick="nut9()">sạc nhanh</button></td>
+        </tr>
+    </table>
+</body>
+<script>
+    var send_msg = []
+    var save_msg = []
+    var send = ''
+    var save = ''
+    var Nokia = function (battery, msger, memory1, memory2) {
+        this.battery = battery
+        this.msg = msger
+        this.memory1 = memory1;
+        this.memory2 = memory2
+        document.getElementById('pin').innerHTML = this.battery
+        this.check_on_off = function () {
+
+            if (battery > 0) {
+                alert(' Nokia đang mở')
+            } else {
+                alert('het pin')
+            }
+
+        }
+        this.on = function () {
+            alert('dien thoai dang bat')
+            this.battery--
+            document.getElementById('pin').innerHTML = this.battery
+        }
+        this.off = function () {
+            alert('dienthoai da tat')
+            this.battery--
+            document.getElementById('pin').innerHTML = this.battery
+        }
+        this.chargging = function () {
+
+            document.getElementById('pin').innerHTML = this.battery
+
+            alert(' dang sac' + this.battery)
+            this.battery++
+        }
+        this.savemsg = function () {
+            save = document.getElementById('text').value
+            save_msg.push(save_msg)
+            alert('da luu msg')
+            console.log(save_msg)
+            document.getElementById('text').value = ''
+
+            this.battery--
+            document.getElementById('pin').innerHTML = this.battery
+        }
+        this.send = function () {
+            send = document.getElementById('text').value
+            alert('mesenger da gui')
+            document.getElementById('text').value = ''
+
+            this.battery--
+            document.getElementById('pin').innerHTML = this.battery
+        }
+        this.sacnhanh = function () {
+            this.battery += 10
+            alert(' dang sac' + this.battery)
+            document.getElementById('pin').innerHTML = this.battery
+        }
+        this.msg_daluu = function () {
+            for(i in save_msg){
+          console.log(save_msg[i])  
+            document.getElementById('text').innerHTML = save_msg[i]
+        }    
+        }
+        this.msg_dagui = function () {
+            
+            document.getElementById('text').innerHTML = send
+        }
+
+    }
+    var iphone = new Nokia(40, 100, 100, 100)
+    function nut1() {
+        iphone.on()
+    }
+    function nut2() {
+        iphone.send()
+    }
+    function nut3() {
+        iphone.off()
+    }
+    function nut4() {
+        iphone.check_on_off()
+    }
+    function nut5() {
+        iphone.savemsg()
+    }
+    function nut6() {
+        iphone.chargging()
+    }
+    function nut7() {
+        iphone.msg_dagui()
+    }
+    function nut8() {
+        iphone.msg_daluu()
+    }
+    function nut9() {
+        iphone.sacnhanh()
+    }
+</script>
+
+</html>

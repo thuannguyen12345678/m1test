@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons.css">
+    <style>
+        .search_box {
+            background: black;
+            width: 500px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+            transition: all 0.5 ease;
+        }
+
+        .search_box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            color: #fff;
+            padding: 0px 10px 10px 10px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .search_box_btn {
+            position: absolute;
+            font-size: 25px;
+            width: 70px;
+            height: 50px;
+            right: 0;
+            top: 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .study button:hover {
+            color: #080ce7;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .title {
+            float: left;
+        }
+
+        p,
+        h3 {
+            text-align: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search_box">
+        <input class="search_1" type="text" placeholder="would you like need find content" />
+        <button class="search_box_btn ">
+            <i id="search_box_btn" class="ti-search"></i>
+        </button>
+    </div>
+    <fieldset>
+        <legend>Content learn</legend>
+
+        <div class="study ">
+            <div class="study1">
+                <button class="title">
+                    <p>Cú pháp JavaScript</p>
+                </button>
+                <div class="content hide">
+                    <br><br>
+                    <p>Trong Javascript, các câu lệnh được phân cách bởi dấu chấm phẩy (;)</p>
+                    <p>what is Javascript?</p>
+                    <p>JavaScript là một ngôn ngữ script dựa trên đối tượng nhằm phát triển các ứng dụng Internet dựa
+                        trên
+                        client và server.</p>
+                    <p>Nhúng javascrip</p>
+                    <p>&lt;script src="./file.js"&gt;&lt;/script&gt;</p>
+                </div>
+            </div>
+
+            <div class="study2">
+                <button class="title">
+                    <p>Câu lệnh Javascript</p>
+                </button>
+                <div class="content hide">
+                    <br><br>
+                    <h3>Biến (variable)</h3>
+                    <p>Biến được sử dụng để lưu trữ giá trị.</p>
+                    <p>Một biến cần được khai báo trước khi sử dụng.</p>
+                    <p>Một biến cần được khai báo trước khi sử dụng.</p>
+                    <p>Để gán một giá trị cho biến, chúng ta sử dụng dấu bằng (=). Dấu (=) được gọi là toán tử gán
+                        (assignment operator). Ví dụ:
+                        vd: let i love = 4 ;
+                    </p>
+                    <h3>Toán tử</h3>
+                    <p> tử số học: + - * </p>
+                    <p>toán tử so sánh: ==; ===; &lt; ; &gt; ;&lt;=;&gt;= </p>
+                    <p>toán tử logic: && ; != ;||; </p>
+                    <p>toán tử bolean: true ; false;</p>
+                    <p>Null; object</p>
+                    <h3> Quy tắc đặt tên:</h3>
+                    <li>Tên phải bắt đầu bằng ký tự chữ cái (từ a-z hoặc A-Z), ký tự gạch dưới (_), hoặc dấu đô-la ($).
+                        Không được bắt đầu tên bằng một ký tự nào khác.</li>
+                    <li>Tên chỉ có thể chứa chữ cái (viết hoa và viết thường), chữ số, dấu gạch dưới và dấu đô-la. Không
+                        được phép sử dụng các ký tự đặc biệt (chẳng hạn như dấu # hoặc ! hoặc ?...) trong tên.</li>
+                    <li>Javascript phân biệt chữ hoa và chữ thường. Có nghĩa là một biến có tên là myName sẽ khác với
+                        một
+                        biến có tên là myname.</li>
+                    <h3>Quy tắc đặt tên file</h3>
+                    <li>Không bao giờ sử dụng dấu cách trong tên file</li>
+                    <li>Không sử dụng ký tự đặc biệt trong tên file</li>
+                    <li>Tên file có phân biệt chữ hoa chữ thường</li>
+                    <li>Giữ tên file của bạn ngắn</li>
+                </div>
+            </div>
+
+            <div class="study3">
+                <button class="title">
+                    <p>Cấu trúc điều kiện IF/IF..ELSE</p>
+                </button>
+                <div class="content hide">
+                    <br><br>
+                    <p>if (biểu thức điều kiện) {</p>
+                    <p>pkhối mã được thực thi nếu điều kiện là đúng</p>
+                    <p>} else {</p>
+                    <p>khối mã được thực thi nếu điều kiện trên là sai</p>
+                    }</p>
+                </div>
+                <div>
+
+                    <div class="study4">
+                        <button class="title">
+                            <p>Câu lệnh switch-case</p>
+                        </button>
+                        <div class="content hide">
+                            <br><br>
+                            <p>Cú pháp</p>
+                            <p> switch(biểu thức) {</p>
+                            <p> // khối lệnh sẽ được thực thi</p>
+                            <p> break;</p>
+                            <p>case giá trị 2:</p>
+                            <p> // khối lệnh sẽ được thực thi</p>
+                            <p>break;</p>
+                            <p>default:</p>
+                            <p> // khối lệnh mặc định sẽ được thực thi nếu không chọn được trường hợp nào
+                                }</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="study5">
+                    <button class="title">
+                        <p>Toán tử ba ngôi</p>
+                    </button>
+                <div class="content hide">
+                        <br><br>
+                        <p>condition ? true_value : false_value;</p>
+                        <p>Trong đó condition là biểu thức điều kiện, true_value là giá trị trả về khi điều kiện đúng và
+                            false_value là giá trị trả về khi điều kiện sai.</p>
+                    </div>
+                <div class="study6">
+                        <button class="title">
+                            <p>Vòng lặp For</p>
+                        </button>
+                <div class="content hide">
+                            <br><br>
+                            <p>For trong JavaScript và vòng lặp với số lần cụ thể</p>
+                            <p>for (biểu thức khởi tạo ; biểu thức điều kiện ; biểu thức thay đổi ) {</p>
+                            <p>Câu lệnh 1 trong khối for ;</p>
+                            <p>Câu lệnh 2 trong khối for ; …}</p>
+                            <p>Bỏ qua lượt lặp hiện tại của vòng lặp for trong JavaScript | Lệnh continue</p>
+                            <p>Thoát khỏi vòng lặp for trong JavaScript | Lệnh break</p>
+                            <p>for lồng trong JavaScript là vòng lặp mà một vòng lặp for lại được chứa bên trong một
+                                vòng lặp for khác.</p>
+                            <p> for lồng thường được sử dụng để vừa thay đổi theo thứ tự nhiều biến số vừa tiến hành
+                                vòng lặp trong JavaScript.</p>
+                </div>
+                <div class="study7">
+        <button class="title">
+        <p>Vòng lặp do while</p>
+        </button>
+        <div class="content hide">
+        <br><br>
+        <p>do...while trong JavaScript và vòng lặp có ít nhất 1 lần chạy,phù hợp với các xử lý
+        không cố định số lần lặp.</p>
+        <p>cú pháp:</p>
+        <p>do{</p>
+        <p>Câu lệnh 1 trong khối do…while ;</p>
+        <p>Câu lệnh 2 trong khối do…while;</p>
+        <p> …
+        }while(biểu thức điều kiện);</p>
+        </div>
+        <div class="study8">
+        <button class="title">
+        <p>While trong JavaScript và vòng lặp không giới hạn số lần</p>
+        </button>
+        <div class="content hide">
+        <br><br>
+        <p>cú pháp:</p>
+        <p>while (biểu thức điều kiện) {</p>
+        <p>Câu lệnh 1 trong khối while ;</p>
+        <p>Câu lệnh 2 trong khối while ;</p>
+        <p> …
+        }</p>
+        </div>
+        <div class="study9">
+        <button class="title">
+        <p>for in--for of</p>
+        </button>
+        <div class="content hide">
+        <br><br>
+        <h4>for in</h4>
+        <p>for…in trong JavaScript là vòng lặp được sử dụng để lấy các thuộc tính của
+        Object dưới dạng một mảng trong JavaScript.</p>
+        <p>Cú pháp:</p>
+        <p>for (biến in object ) {</p>
+        <p>Câu lệnh 1 trong khối for…in ;</p>
+        <p>Câu lệnh 2 trong khối for…in;</p>
+        <p> …
+        }</p>
+        <h4>For off</h4>
+        <p>For…of trong JavaScript là vòng lặp được sử dụng để lấy các giá trị của
+        iterable objects (các đối tượng có thể lặp lại) theo thứ tự index.
+        </p>
+        <p>Chúng ta sử dụng for…of với cú pháp sau đây:</p>
+        <p> for (biến of iterable objects ) {</p>
+        <p>Câu lệnh 1 trong khối for…of ;</p>
+        <p> Câu lệnh 2 trong khối for…of;</p>
+        <p> …
+        }</p>
+        <h4>Sự khác biệt giữa for…in và for…of trong javascript</h4>
+        <p>Sự khác biệt giữa for…in và for…of trong javascript</p>
+        <p>Trong khi đó câu lệnh for…of sẽ lặp lại các giá trị của đối tượng đó</p>
+        </div>
+        <div class="study10">
+        <button class="title">
+        <p>Mảng Array</p>
+        </button>
+        <div class="content hide">
+        <br><br> <br><br> <br><br>
+        <p>Mảng trong JavaScript, hay còn gọi là kiểu mảng trong JavaScript là tập
+        hợp các dữ </p>
+        <p>liệu có cùng mối liên quan, và các dữ liệu chứa trong mảng được gọi là
+        phần tử của mảng đó.</p>
+        <h4>Mảng 1 chiều</h4>
+        <p> mảng 1 chiều là kiểu mảng mà trong đó các phần tử được sắp xếp liên tục
+        và có thứ tự trên bộ nhớ máy tính. Các phần tử trong mảng được đánh số
+        thứ tự từ đầu mảng tới cuối mảng, bắt đầu từ số 0 và tăng dần 1 đơn vị.
+        </p>
+        <p>Chúng ta gọi số này là index (chỉ số) của phần tử, và mảng có n phần tử
+        thì sẽ có index bắt đầu từ [0] tới [n – 1].</p>
+        <h4>Mảng 2 chiều</h4>
+        <p>mảng 2 chiều là kiểu mảng chứa các mảng khác bên trong nó.</p>
+        <p>Phần tử của mảng 2 chiều không được lưu giữ trực tiếp trong mảng 2 chiều,
+        mà được lưu giữ thông qua các mảng 1 chiều bên trong mảng 2 chiều đó</p>
+        <p>Đếm số phần tử trong mảng JavaScript: array.length </p>
+        <p>Array filter trong JavaScript: có tác dụng lấy các phần tử thỏa mãn điều
+        kiện chỉ định từ mảng ban đầu và ra tạo mảng mới trong JavaScript.</p>
+        <p>vd: arr.filter(callbackFn(value));</p>
+        <p>Array map trong JavaScript là phương thức trong Array Object, có tác dụng
+        xử lý tuần tự và tạo mảng mới từ các phần tử trong mảng ban đầu.</p>
+        <p>
+        let num = [2, 3, 4, 5, 6];
+        </p>
+        <p>let new_num = num.map(function(element){</p>
+        <p> return element* 2;</p>
+        <p> });</p>
+        <p>console.log(new_num);</p>
+        <p>// [ 4, 6, 8, 10, 12 ]</p>
+        <p>Cắt mảng trong JavaScript (slice)</p>
+        <p>reverse() trong JavaScript sẽ đảo ngược thứ tự các phần tử trong mảng ban
+        đầu</p>
+        <p>Chuyển mảng thành chuỗi trong JavaScript | phương thức join()</p>
+        <p>thêm phần tử vào mảng: array.push( element1, element2, … )</p>
+        <p>Truy cập và lấy phần tử trong mảng JavaScript bằng index</p>
+        <p>
+        let prov = ["Thanh Hóa", "Hà Nội", "Sài Gòn", "Đà Nẵng"];</p>
+        console.log(prov[1]);</p>
+        <p>//> Hà Nội</p>
+
+        <p>console.log(prov[2]);</p>
+        <p>//> Sài Gòn</p>
+        </div>
+        <div class="study11">
+        <button class="title">
+        <p>Typeof</p>
+        </button>
+        <div class="content hide">
+        <br><br> <br><br> <br><br>
+        <p>typeof trong JavaScript là toán tử được sử dụng để kiểm tra kiểu dữ
+        liệu của một đối tượng bất kỳ trong JavaScript.</p>
+
+        <p> cú pháp sau đây:
+
+        typeof value;</p>
+        </div>
+        <div class="study12">
+        <button class="title">
+        <p>Hàm</p>
+        </button>
+        <div class="content hide">
+        <br><br> <br><br> <br><br>
+        <p>Hàm trong javascript là một tập hợp các xử lý nhằm thực hiện một
+        chức năng cụ thể nào đó trong chương trình. </p>
+        <p>Hàm cho phép bạn kết hợp các xử lý khác nhau thành một và đặt tên
+        cho nó. Sau khi tạo và đặt tên cho một hàm,</p>
+        <p> chúng ta chỉ cần gọi tên hàm ra mỗi khi cần sử dụng đến nó trong
+        chương trình.</p>
+        <p>3 thành phần của hàm gồm tham số, đối số và giá trị trả về</p>
+        <p>cú pháp:</p>
+        <p>function find_sum(x,y){ </p>
+        <p>let sum = x + y;</p>
+        <p> return sum;}</p>
+        <p> tổng = find_sum(1,2); </p>
+        <p>console.log(tổng);</p>
+        <p>Tham số (parameter) là các biến có tên được sử dụng để nhập các
+        đối số vào các hàm. vd: x,y</p>
+        <p>Đối số (argument) là các giá trị thực được truyền vào hàm. Đối số
+        được truyền vào hàm qua tham số, và được sử dụng khi chúng ta
+        gọi hàm trong javascript.</p>
+        <p>trên ví dụ: (1,2)</p>
+        <li>Tham số của hàm là các biến có tên được liệt kê trong định nghĩa
+        của hàm. </li>
+        <li>Đối số của hàm là các giá trị thực được truyền vào hàm.</li>
+        <li> Tham số nhận giá trị của các đối số được cung cấp và tính toán
+        trong hàm.</li>
+        </div>
+        <div class="study3">
+        <button class="title">
+        <p>Cấu trúc điều kiện IF/IF..ELSE</p>
+        </button>
+        <div class="content hide">
+        <br><br>
+        <h4></h4>
+        </div>
+        <div class="study3">
+        <button class="title">
+        <p>Cấu trúc điều kiện IF/IF..ELSE</p>
+        </button>
+        <div class="content hide">
+        <br><br>
+        <p></p>
+        </div>
+        <h1></h1>
+
+    </fieldset>
+    </div>
+   
+    </iframe>
+    
+
+</body>
+<script>
+    ///search///
+    let arr = {
+        learn: [
+            {
+                title: 'Cú pháp JavaScript',
+                content: ''
+
+            }
+        ]
+    }
+    
+    ///java find content
+    let btnOpens = document.getElementsByClassName('title');
+    let btnlogins = document.getElementsByClassName('content');
+    let i = 0;
+    for (btnOpen of btnOpens) {
+        let btnlogin = btnlogins[i];
+        btnOpen.addEventListener('click', function () {
+            btnlogin.classList.toggle('hide');
+        })
+
+        i++;
+    }
+    document.getElementById('show').innerHTML = btnOpens.join('\n')
+
+</script>
+
+</html>

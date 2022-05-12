@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //
+        //   var info = {
+        //       name:"thuần",
+        //       age: 24,
+        //       address:"vĩnh linh"
+        //   }
+        //   var mykey=" address"
+        //   console.log(info);
+
+
+        // function User(ho,ten,anh){
+        //     this.ho = ho;
+        //     this.ten = ten;
+        //     this.anh = anh;
+        //     this.getname=function(){
+        //         return `${this.ho} ${this.ten}`
+        //     }
+        // }
+        // var author = new User('nguyen','thuan','avata');
+        // var user = new User('nguyễn','đức','avata');
+
+        // console.log(author.getname());
+        // console.log(user.getname());
+        // //MUỐN THÊM THÌ :
+        // author.ny = 'chưa có';
+        // user.tien='không luôn';
+
+
+        //     var info = {
+        //       name: 'thắm',
+        //       birthday : 1999,
+
+        //     sleep1:function(){
+        //         console.log("tên: "+ this.name + " sinh ngày: " + this.birthday);
+        //     },
+        //    eat:function(){
+        //         console.log("tên"+ this.name + " sinh ngày: " + this.birthday);
+        //     },
+        //     work:function(){
+        //         console.log("tên"+ this.name + " sinh ngày: " + this.birthday);
+        //     }
+        //     };
+        //     info.name= 'Hồng Thắm';
+        // console.log(info.name);
+        // // info.sleep1();
+
+
+        //  var may_tinh={
+        //      so_A:5,
+        //      so_b:6,
+        //      cong: function(){
+        //          return this.so_A + this.so_b
+        //      },
+        //      tinh:function(){
+        //          return this.cong()
+        //      }
+        //  }
+        //     console.log(may_tinh.tinh());
+
+
+
+        //lớp:
+        //     let person = function(name, age){
+        //         this.name= 'name';
+        //         this.birthday=age;
+        //         this.sleep=function(){
+
+        //         }
+        //         this.eat=function(){
+
+        //         }
+
+        //  }
+        //    let thao = new person('thảo', 1992)
+        //    thao.name='thắm';
+        //     thao.birthday= 1999;
+        //     console.log(thao);
+
+        // let tham = new person('thắm', 1999);
+        //    tham.name='Hải';
+        //    tham.birthday=1998;
+
+        //    console.log(tham);
+
+        // let person = function (ts_name, ts_age) {
+        //     this.name = ts_name;
+        //     this.birthday = ts_age;
+        //     this.say = function () {
+        //         console.log("tên: " + this.name + " sinh ngày: " + this.age);
+        //     }
+        //     this.move = function () {
+        //         console.log("tên: " + this.name + " sinh ngày: " + this.age);
+        //     }
+        // }
+
+//bảng 1
+        function Battery() {
+            this.energy = 0;
+
+            this.setEnergy = function (energy) {
+                this.energy = energy;
+            };
+            this.getEnergy = function () {
+                return this.energy;
+            };
+            this.decreaseEnergy = function () {
+                this.energy--
+            };
+        }
+//bảng2
+        function FlashLamp() {
+            this.status = true;
+            this.battery = null;
+            this.setBattery = function (battery) {
+                this.battery= battery;
+            };
+            this.getBatteryInfo = function () {
+                return this.battery;
+            };
+            this.light = function () {
+
+            };
+            this.turnOn = function () {
+
+            };
+            this.turnoff = function () {
+
+            };
+        };
+        
+
+        var pin = new Battery();
+        pin.setEnergy(100);
+        console.log(pin);
+        console.log(pin.getEnergy());
+    
+        var den = new FlashLamp();
+        den.setBattery(pin);
+        console.log(den);
+        
+
+
+    </script>
+</body>
+
+</html>

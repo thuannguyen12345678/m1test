@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 25 độ c bằng : </p>
+    <p id="dof"></p> độ f 
+    <p id="dok"></p> độ K
+    
+   
+</body>
+<script>
+    var Temperature = function(do_c){
+   this.do_c = do_c;
+   this.do_F=function(){
+       return 9/5* this.do_c + 32
+   }
+
+   this.do_K = function(){
+       return this.do_c + 273.15
+   }
+}
+var degree = new Temperature(25)
+console.log(degree.do_c)
+console.log(degree.do_F())
+console.log(degree.do_K())
+document.getElementById("dof").innerHTML = degree.do_F();
+document.getElementById("dok").innerHTML = degree.do_K();
+
+</script>
+</html>
