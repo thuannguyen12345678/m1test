@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { margin: auto; width: 960px; background-color:antiquewhite;
+        height: auto; overflow: hidden;
+        text-align: center;
+    }
+    button {width: 60px; height: 60px;}
+    </style>
+    <script>
+        var flag=true;
+        var count=0;
+        function flags(btn){
+          var node = document.getElementByTagName("button")(btn);
+            node.interHTML=flag ? "blue" : "yellow"
+            node.setAttribute("disabled","true");
+            flag = ! flag;
+            count+=1;
+            if(dem==8){
+                alert("Gameover");
+                location.reload();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Game CARO</h1>
+    <button onclick="flags(0)"></button>
+    <button onclick="flags(1)"></button>
+    <button onclick="flags(2)"></button>
+    <button onclick="flags(3)"></button>
+    <button onclick="flags(4)"></button>
+    <button onclick="flags(5)"></button>
+    <button onclick="flags(6)"></button>
+    <button onclick="flags(7)"></button>
+    <button onclick="flags(8)"></button>
+</body>
+</html>
